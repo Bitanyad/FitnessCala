@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+        <meta charset="utf-8">
+
+        <script lang="javascript">
+          function answer(){
+            document.getElementById('display').innerHTML = 
+            {bmi};
+          }
+        </script>
+    </head>
+
+    <body>
+      <div class="p-5 text-center bg-image img-fluid" style="
+      background-image: url('https://www.cityoflapalma.org/ImageRepository/Document?documentID=10011');
+      height: 200px;
+    "> 
+    <h1><b>Fitness and Health</b></h1> 
+  </div>
+
+        <div class="container">
+            <div class="form">
+              <form  class="text-center" action="" method="POST">
+                <legend><h2>BMI Calculator</h2></legend>
+                <br>
+                <label for = "weightKG">Weight: </label>
+                <input type="text" id="weightKG" name="weightKG" placeholder="in KG" required>
+                <br>
+                <label for = "heightCM">Height: </label>
+                <input type="text" id="heightCM" name="heightCM" placeholder="in cm" required>
+                <br>
+                <button type="submit" class="btn btn-outline-primary" onclick="answer();"> Calculate </button>
+              </form>
+                <span id="display"></span>
+              <br>
+              
+                <table class="table">
+                  <thead>
+                <tr>
+                  <th>BMI </th>
+                  <th>status </th>
+                </tr>
+              </thead>
+                <tbody>
+                <tr class="table-warning">
+                  <td> &lt 19</td>
+                  <td>UNDER WEIGHT</td>
+                </tr>
+                <tr class="table-success">
+                  <td> 19-25 </td>
+                  <td>NORMAL WEIGHT</td>
+                </tr>
+                <tr class="table-warning">
+                  <td> 25-30 </td>
+                  <td>OVER WEIGHT</td>
+                </tr>
+                <tr class="table-danger">
+                  <td> &gt 30</td>
+                  <td> OBESE </td>
+                </tr>
+              </tbody>
+              </table>
+          
+            </div>
+          </div>
+    </body>
+
+</html>

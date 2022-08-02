@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+      <div class="p-5 text-center bg-image img-fluid" style="
+      background-image: url('https://www.cityoflapalma.org/ImageRepository/Document?documentID=10011');
+      height: 200px;
+    "> 
+   <h1><b>Fitness and Health</b></h1>
+  </div>
+
+        <!-- I found the formula of calculating body fat percentage from https://www.gaiam.com/blogs/discover/how-to-calculate-your-ideal-body-fat-percentage#:~:text=(1.20%20x%20BMI)%20%2B%20(,)%20%2D%205.4%20%3D%20Body%20Fat%20Percentage-->
+        <div class="container">
+            <div class="form">
+              <form  class="text-center" action="/bodyfat" method="POST">
+                <legend><h2>Body Fat Percentage</h2></legend>
+                <br>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                <option value="" class="disabled">-</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                </select>
+                <br>
+                <label for = "age"> Age: </label>
+                <input type="tel" id="age" name="age" required pattern="[0-9]{2}">
+                <br>
+                <label for = "weightKG">Weight: </label>
+                <input type="number" id="weightKG" name="weightKG" placeholder="in KG" required>
+                <br>
+                <label for = "heightCM">Height: </label>
+                <input type="number" id="heightCM" name="heightCM" placeholder="in cm" required>
+                <br>
+                <button type="submit" class="btn btn-outline-primary"> Calculate </button>
+              </form>
+          
+              <table class="table">
+                <thead>
+              <tr class="table-dark" >
+                <th>Activity level </th>
+                <th>Male body </th>
+                <th>Female body </th>
+              </tr>
+            </thead>
+              <tbody>
+              <tr >
+                <td>Athletes</td>
+                <td>6-13%</td>
+                <td>14-20%</td>
+              </tr>
+              <tr >
+                <td>Fit non-athletes</td>
+                <td>14-17%</td>
+                <td>21-24%</td>
+              </tr>
+              <tr >
+                <td>Acceptable</td>
+                <td> 18-24% </td>
+                <td>25-31%</td>
+              </tr>
+              <tr class="table-danger">
+                <td>Obesity</td>
+                <td> 25% and more</td>
+                <td> 32% amd more </td>
+              </tr>
+            </tbody>
+            </table>
+
+            </div>
+          </div>
+    </body>
+
+</html>

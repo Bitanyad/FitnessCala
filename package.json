@@ -1,0 +1,33 @@
+{
+  "name": "fitness_and_health",
+  "version": "1.0.0",
+  "description": "calculate bmi, body fat, ideal weight and calories burned",
+  "main": "app.js",
+  "scripts": {
+    "test": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bitanyad/FitnessCalc"
+  },
+  "keywords": [
+    "fitness",
+    "bmi",
+    "bodyfat",
+    "idealweight",
+    "calories"
+  ],
+  "author": "Bitanya D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bitanyad/FitnessCalc/issues"
+  },
+
+  "dependencies": {
+    "alert": "^5.1.1",
+    "bootstrap": "^5.2.0",
+    "express": "^4.18.1",
+    "jquery": "^3.6.0"
+  }
+
+}
